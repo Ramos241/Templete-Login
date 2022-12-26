@@ -1,4 +1,5 @@
 import {
+  Box,
   Button,
   Checkbox,
   Divider,
@@ -31,9 +32,9 @@ export default function SignUpPage() {
           </Button>
         </Stack>
 
-        <Divider>
-          <Typography color="gray"> or</Typography>
-        </Divider>
+        <Box>
+          <Divider sx={{ color: 'gray' }}>or</Divider>
+        </Box>
 
         <Grid container my={2} spacing={2}>
           <Grid item xs={12} md={6}>

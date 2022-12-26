@@ -1,4 +1,4 @@
-import { Button, Divider, Stack, Typography } from '@mui/material';
+import { Box, Button, Divider, Stack, Typography } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
 export default function HomePage() {
@@ -20,9 +20,9 @@ export default function HomePage() {
           </Button>
         </Stack>
 
-        <Divider>
-          <Typography color="gray">or</Typography>
-        </Divider>
+        <Box>
+          <Divider sx={{ color: 'gray' }}>or</Divider>
+        </Box>
 
         <Stack my={3}>
           <Button variant="contained" onClick={() => navigate('/sign-up')}>
